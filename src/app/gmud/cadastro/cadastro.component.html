@@ -1,0 +1,36 @@
+<form (ngSubmit)="salvar()">   
+ 
+    <br/>
+    <h3>{{titulo}}</h3>
+ 
+    <label>Código:
+        <input type="input" name="codigo" size="10" [(ngModel)]="gmud.codigo" disabled/>
+    </label><br/><br/>
+ 
+    <label>Nome:
+        <input type="input" name="nome-gmud" size="30" [(ngModel)]="gmud.nome"/>
+    </label><br/><br/>
+
+    <label>Fornecedor:
+        <input type="input" name="fornecedor" size="10" [(ngModel)]="gmud.fornecedor" disabled/>
+    </label><br/><br/>
+ 
+    <label>Sistema:
+        <input type="input" name="sistema" size="30" [(ngModel)]="gmud.sistema"/>
+    </label><br/><br/>
+
+    <label>Recurso:
+        <input type="input" name="recurso" size="30" [(ngModel)]="gmud.recurso"/>
+    </label><br/><br/>
+
+    <label>Data:
+        <input type="input" name="data" size="30" [(ngModel)]="gmud.data"/>
+    </label><br/><br/>
+
+    <label>Registro Ativo:
+        <input type="radio" name="ativo" [(ngModel)]="gmud.ativo" [value]="true">Sim
+        <input type="radio" name="ativo" [(ngModel)]="gmud.ativo" [value]="false">Não<br>
+    </label><br/><br/>
+ 
+    <button type="submit">Salvar</button>
+</form>
