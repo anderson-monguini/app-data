@@ -24,11 +24,15 @@ import {Response} from '../../services/response';
     ngOnInit() {
  
       /*SETA O TÍTULO */
+
       this.titulo = "Registros Cadastrados";
  
-      /*CHAMA O SERVIÇO E RETORNA TODAS AS PESSOAS CADASTRADAS */
-      this.gmudService.getGmud().subscribe(res => this.gmud = res);
-    }
+      /*CHAMA O SERVIÇO E RETORNA TODAS AS PESSOAS CADASTRADAS
+
+      */
+      this.gmudService.getGmudGeneral().subscribe(res => this.gmud = res);
+      
+      }
  
     /**EXCLUI UM REGISTRO QUANDO CLICAMOS NA OPÇÃO EXCLUIR DE UMA 
      * LINHA DA TABELA*/

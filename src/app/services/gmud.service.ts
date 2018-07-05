@@ -29,11 +29,11 @@ export class GmudService {
     }
     /**CONSULTA TODAS AS GMUDS CADASTRADAS */
     
-    /**
-    getGmud(){        
+    
+    getGmudGeneral(){        
         return this.http.get(this.baseUrlService).map(res => res.json());
     } 
-    */
+    
  
     /**ADICIONA UMA NOVA GMUD */
     addGmud(gmud: Gmud){
